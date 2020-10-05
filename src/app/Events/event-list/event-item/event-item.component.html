@@ -1,3 +1,7 @@
-<p>
-  event-item works!
-</p>
+<div class="card">
+  <img class="card-img-top" [src]="currentEvent.image_url" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{currentEvent.title}}</h5>
+    <p class="card-text"><small class="text-muted">{{currentEvent.dateStart}}</small></p>
+  </div>
+</div>

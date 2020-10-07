@@ -1,0 +1,26 @@
+<form #myForm="ngForm" (ngSubmit)="sendNewEvent(); myForm.reset()">
+  <h2>Add new event: </h2>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Title</label>
+    <input [(ngModel)]="newTitle" type="text" class="form-control" id="title" name="title" placeholder="Enter title">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">Description</label>
+    <input [(ngModel)]="newDescription" type="text" class="form-control" id="description" name="description"
+      placeholder="Enter description">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">Image URL</label>
+    <input [(ngModel)]="newImageURL" type="text" class="form-control" id="image" name="image"
+      placeholder="Enter image URL">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">Date start</label>
+    <input [(ngModel)]="newDate" type="date" class="form-control" id="date" name="date" placeholder="Enter title">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
